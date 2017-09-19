@@ -1,0 +1,327 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>我的帖子</title>
+	
+	<link rel="stylesheet" type="text/css" href="__CSS__/normalize.css">
+	<link rel="stylesheet" type="text/css" href="__CSS__/common.css">
+	<link rel="stylesheet" type="text/css" href="__CSS__/index.css">
+	<style>
+		.current{
+			margin: 5px; 
+   			padding:0 8px;
+		}	
+		.num{
+   			margin: 5px; 
+   			padding:0 8px; 
+   			border:1px solid #0ff;
+   			 background-color:#fff; 
+   			 cursor: pointer;
+		}
+		.first,.last,.prev,.next{
+			border:1px solid #0ff;
+   			 background-color:#fff;
+   			 text-align: center;
+   			 padding:0 8px; 
+		}
+		.num,.current,.first,.last,.prev,.next:hover{
+			/*border:1px solid #00f;*/
+		}
+	</style>
+</head>
+<body>
+	<!--顶部导航-->
+	
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>Insert title here</title>
+<script type="text/javascript" src="__JS__/jq.js"></script>
+<script type="text/javascript" src="__JS__/base64.js"></script>
+	<link rel="stylesheet" type="text/css" href="__CSS__/common.css">
+<script type="text/javascript">
+	function hello() {
+		mydate = new Date();
+		myhour = mydate.getHours();
+		if (myhour < 6)
+			welcomestring = "凌晨好";
+		else if (myhour < 9)
+			welcomestring = "早上好";
+		else if (myhour < 12)
+			welcomestring = "上午好";
+		else if (myhour < 14)
+			welcomestring = "中午好";
+		else if (myhour < 17)
+			welcomestring = "下午好";
+		else if (myhour < 19)
+			welcomestring = "傍晚好";
+		else if (myhour < 22)
+			welcomestring = "晚上好";
+		else
+			welcomestring = "夜里好";
+		return welcomestring;
+	}
+</script>
+</head>
+<body>
+<volist name="sec" id="se">
+	{$se['p_content']}
+	{$se['title']}
+	{$se['nick_name']}
+</volist>
+
+
+<div class="header">
+		<div class="wrap clear">
+			<ul class="fl">
+				<li>
+					<a href="http://news.cn/" target="_blank">
+						<img src="__IMG__/xinhua.png" alt="新华网logo" />
+					</a>
+				</li>
+				<li>
+					<a href="http://news.cn/" target="_blank">新华网</a>
+				</li>
+				<!-- <li>
+				<a href="" target="_blank">社区</a>
+			</li>
+			-->
+			<li>
+				<a href="http://forum.home.news.cn" target="_blank">论坛</a>
+			</li>
+			<li>
+				<a href="http://sike.news.cn" target="_blank">思客</a>
+			</li>
+			<li>
+				<a href="http://blog.home.news.cn" target="_blank">博客</a>
+			</li>
+			<li>
+				<a href="http://t.home.news.cn" target="_blank">微博</a>
+			</li>
+			<li>
+				<a href="http://my.xuan.news.cn" target="_blank">新时空</a>
+			</li>
+			<li>
+				<a href="http://www.xinhuanet.com/forum/wjqn/index.htm" target="_blank">网界青年</a>
+			</li>
+			<li>
+				<a href="http://www.news.cn/science/" target="_blank">科普中国</a>
+			</li>
+			<li>
+				<a href="http://www.news.cn/video/index.htm" target="_blank">视频</a>
+			</li>
+			<li>
+				<a href="http://www.xinhuanet.com/datanews/index.htm" target="_blank">数据</a>
+			</li>
+		</ul>
+		<ul class="fr">
+			
+			
+			
+				<li><span><script> document.write(hello());</script>！</span></li>
+				<li><a href="/space/userspace.do?id=128519260" target="_blank"><img class="tx" src="http://tpic.home.news.cn/userIcon/s/128519260" alt="" /></a></li>
+				<li><a href="/space/userspace.do?id=128519260" target="_blank">贰手时间</a></li>
+				
+						<li>
+							<a href="http://my.home.news.cn/qm/control/home.do" target="_blank" class="yj">
+								
+							</a>
+						</li>
+				<li><a href="/logout.jsp">退出</a></li>
+			
+			
+		</ul>
+	</div>
+</div>
+
+		<script type="text/javascript">
+		var url = window.location.href;
+		var base64Url = base64encode(url);
+		$(".registerA").each(function(){
+			$(this).attr("href","http://login.home.news.cn/reg.jsp?surl="+base64Url);
+		});
+		
+	</script>
+</body>
+</html>
+	<!--/顶部导航-->
+	<!--主要内容-->
+	<div class="wrap clear mt30" style="height:745px;">
+		<!--内容左边部分-->
+			<div class="fl w272">
+		</div>
+			<!--/二维码-->
+		
+		<!--/内容左边部分-->
+		<!--内容右边部分-->
+		<div class="fr w823" style="margin:0 150px;">
+			<!--列表-->
+			<div class="lt-main">
+				<!--标签-->
+				<ul class="lt-tag clear">
+					<li><a data-tag="all" href="/hotPost/24RankList.do?pg=1"  >
+						<span  style="color: #fff; font-weight:bold;">查询到的帖子</span>
+					</a></li>
+					<!-- <li><span>|</span></li>
+					<li><a data-tag="yc" href="/hotPost/7dRankList.do?pg=1" >
+						<span >一周排行</span>
+					</a></li> -->
+				</ul>
+				<!--/标签-->
+				<!--内容-->
+				<div class="lt-item" >
+			</span>
+				<volist name="lists" id="v">
+
+				<ul class="lt-ind-fbi">
+				<dl class="item"><dt class="clear">
+					<span class="bq ph">{$v.inv_id}</span>
+					<li>
+						<a class="t1 fl" href="{:U('detail',array('id'=>$v['inv_id']))}" target="_blank">{$v.title}</a>
+		<!-- 							<a class="t4 fr" href=""></a> -->
+						<span class="t3 fr" style="color:#aaa">{$v.time|date="Y-m-d H:i:s",###}</span>
+					</li>
+				</ul>
+				</volist>
+				</div>
+				<!--/内容-->
+				<!--翻页-->
+					<div id="page"  style="margin:0 50px;">
+					            {$page}
+					</div>
+					<ul class="fl1">
+						
+					</ul>
+					<ul class="fr">
+				<!-- 		<li><a >&lt</a></li>
+    					<li><a  href="/hotPost/24RankList.do?pg=2">&gt</a></li>											
+						<li>
+							<input class="te" name="pageNo" id="jumpPageNo" type="text" />
+						</li>
+						<li>
+							<input type="submit" value="GO" class="go" id="jumpPage" />
+						</li> -->
+					</ul>
+				</div>
+				<!--/翻页-->
+			</div>
+			<!--/列表-->
+		</div>
+		<!--/内容右边部分-->
+	</div>
+	<div class="lt-item" id="lt-item">
+				
+					<volist name="list" id="lists">
+					<dl class="item">
+						<dt class="clear">
+									<span class="bq zd">置顶</span>
+							<a href="/detail/141168181/1.html" target="_blank" class="bt">
+								{$lists.title}
+							
+							</a>
+							<a href="/detail/141168181/1.html#postreply" target="_blank"><span class="vi2">30</span></a>
+							<span class="vi1">{$lists.pageView}</span>
+
+						</dt>
+						
+							<dd>
+							
+							</dd>
+						
+						<dd>
+							<p class="clear">
+								<a class="fl nc lt-nc" href="" target="_blank" data="cherrywher09">{$lists.nick_name}</a>
+								
+								<span class="fl ti">{$lists.time|date="Y-m-d H:i:s",###}</span>
+								<span class="fr ti">{$lists.time|date="Y-m-d H:i:s",###}</span>
+								<a class="fr nc pl">{$lists.nick_name}</a>
+
+							</p>
+
+							<!-- 置顶贴不在列表页显示图片 -->
+			                        
+			                        
+							
+							<div class="pop">
+								<input type="hidden" name="userId" value="cherrywher09" />
+								<img class="ptx" src="http://tpic.home.news.cn/userIcon/m/cherrywher09" alt="">
+								<p class="pnc">
+									<a href="" target="_blank"></a>
+								</p>
+								<p class="pdj">
+									等级：
+									<span class="userExper"></span>
+								</p>
+								<ul class="pli clear">
+									<li>
+										<span class="postCount"></span>
+										<span>发帖数</span>
+									</li>
+									<li>
+										<span class="experience"></span>
+										<span>经验值</span>
+									</li>
+									<li>
+										<span class="points"></span>
+										<span>积分</span>
+									</li>
+								</ul>
+							</div>
+						</dd>
+					</dl>
+					</volist>
+
+	<!--/主要内容-->                                                                              
+	<!--底部-->
+	<div class="footer">
+	<p>
+		Copyright &copy; 2000 - 2016 XINHUANET.com　All Rights Reserved. 　        制作单位：新华网 版权所有 新华网
+	</p>
+</div>
+	<!--/底部-->
+	
+	<script src="__JS__/jquery.min.js"></script>
+    <script src="__JS__/ranking.js"></script>
+    <script src="__JS__/slides.min.js"></script>
+    <script src="__JS__/common.js"></script>
+    <script src="__JS__/detail.js"></script>
+    <script src="__JS__/individual.js"></script>
+    <script type="text/javascript">
+$(document).ready(function(){
+	$("#jumpPage").click(function(){
+    	var jumpPageObj = $("#jumpPage");
+    	if (!jumpPageObj) {
+    		return false;
+    	}
+    	var jumpPageValue = $("#jumpPageNo").val();
+    	if (jumpPageValue != "") {
+    		var re1 = new RegExp("[0-9]{1,5}", "g");
+    		if (re1.test(jumpPageValue)) {
+    			var pageNo = parseInt(jumpPageValue);
+    			if (pageNo >= 1 && pageNo <= 10000) {
+    				window.location.href="/hotPost/24RankList.do?pg="+pageNo;
+    				return false;
+    			}
+    		}
+    	}
+    	alert("请输入有效的页数！");
+    	return false;
+		
+	});
+});
+</script>
+</body>
+</html>
